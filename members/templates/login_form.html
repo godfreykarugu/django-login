@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+login page
+
+{% endblock title %}
+
+
+{% block content %}
+<h1>login Template</h1>
+<div>
+    <form method="POST" action="">
+        {% csrf_token %}
+        <LAbel>username</LAbel>
+        <input type="text" name='username' placeholder="enter your name"> <br><br>
+        <label>password</label>
+        <input type="password" name='password' placeholder="enter your password"> <br><br>
+        <input type="submit" value="Login">
+    </form>
+</div>
+{% endblock content %}
+
